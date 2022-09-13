@@ -1,0 +1,1 @@
+# DijitalSelected hala geliştirme aşamasında
