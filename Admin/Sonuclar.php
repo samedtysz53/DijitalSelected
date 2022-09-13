@@ -58,20 +58,9 @@
 	</div>
 		
 	
-	<div><!-- InstanceBeginEditable name="EditRegion3" --><div class="bg-white Top">
-		
-		<div class="container">
-			
-			<form class="form-group "  method="post" action="Control/parti.php">
-				 
-			<input type="text" name="PartiName" class="form-control" placeholder="Parti adı" maxlength="20">
-				<br>
-			<input type="text" name="PartyLeader" class="form-control" placeholder="Parti Lideri" maxlength="20">
-				<br>
-				<button class="btn btn-success">Ekle</button>
-			</form>
-			
-			<table class="table">
+	<div><!-- InstanceBeginEditable name="EditRegion3" -->
+		<div class="Top bg-white">
+	 <table class="table">
 			<tr>
 				<th class="table-secondary">#</th>
 				<th class="table-secondary">Parti adı</th>
@@ -99,12 +88,9 @@
 						 
 						  </tr>";
 							}
-					?>
-				
-			</table>
-			 
-		</div>
-		</div><!-- InstanceEndEditable --></div>
+		 ?>
+		 </div>
+		<!-- InstanceEndEditable --></div>
 	 
  
 

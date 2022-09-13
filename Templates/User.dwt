@@ -36,19 +36,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 	 <li class="nav-item active">
-		<a class="nav-link" href="../Admin/Control.php">Anasayfa</a>
+		<a class="nav-link" href="../SecimYap.php">Oy ver</a>
 		</li>
  
-      <li class="nav-item ">
-        <a class="nav-link" href="../Admin/PartiAdd.php">Parti ekle<span class="sr-only">(current)</span></a>
-      </li>
+      
       <li class="nav-item">
-        <a class="nav-link" href="../Admin/Sonuclar.php">Sonuç sayfası</a>
-      </li>   
-		<li class="nav-item">
-        <a class="nav-link" href="../Admin/PersonelAdd.php">Personel ekle</a>
-      </li>
-		 
+        <a class="nav-link" href="../Sonuc.php">Sonuç sayfası</a>
+      
     
     
     </ul>
@@ -56,7 +50,7 @@
   </div>
 </nav>
 	</div>
-		
+	 
 	
 	<div><!-- TemplateBeginEditable name="EditRegion3" -->EditRegion3<!-- TemplateEndEditable --></div>
 	 

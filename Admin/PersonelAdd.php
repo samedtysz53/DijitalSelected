@@ -58,53 +58,59 @@
 	</div>
 		
 	
-	<div><!-- InstanceBeginEditable name="EditRegion3" --><div class="bg-white Top">
+	<div><!-- InstanceBeginEditable name="EditRegion3" -->
 		
-		<div class="container">
+		<div class=" bg-white Top">
+		<form class="form-group" method="post" action="Control/AdminAdd.php">
+		 
+			<input type="text" pattern="\d{11}" class="form-control" placeholder="TC" name="tc" maxlength="11"> <br>
+			<input type="text" class="form-control" placeholder="Kullanıcı adı" name="user"> <br>
+			 
+			<input type="text" class="form-control" placeholder="Kullanıcı Soyadı" name="yourname"><br>
+			<input type="text" class="form-control" placeholder="Yetki" name="authority"> <br>
+			 
+			<button class="btn btn-success">Kaydet</button>
+			 
 			
-			<form class="form-group "  method="post" action="Control/parti.php">
-				 
-			<input type="text" name="PartiName" class="form-control" placeholder="Parti adı" maxlength="20">
-				<br>
-			<input type="text" name="PartyLeader" class="form-control" placeholder="Parti Lideri" maxlength="20">
-				<br>
-				<button class="btn btn-success">Ekle</button>
 			</form>
 			
+		
+		</div>
+		<div class="Top bg-white">
+		
 			<table class="table">
 			<tr>
-				<th class="table-secondary">#</th>
-				<th class="table-secondary">Parti adı</th>
-				<th class="table-secondary">Parti Lideri</th>
-				<th class="table-secondary">Oy</th>
+			<th class="table-secondary">TC</th>	
+			<th class="table-secondary">Ad</th>	
+			<th class="table-secondary">Soyad</th>	
+			<th class="table-secondary">Yetki</th>	
 			</tr>
-		 
+				 
 				<?php 
 					include("Control/databaseconnect.php");
-					 $sql="Select * from party";
+					 $sql="Select * from admin";
 					 $sorgu=mysqli_query($conn,$sql);
 					  while($sonuc=mysqli_fetch_array($sorgu))
 							{
 							 
-							 $PartyN=$sonuc["PartiName"];
-							 $LeaderN=$sonuc["partyLeaderName"];
-							 $ID=$sonuc["ID"];
-							 $Vote=$sonuc["Vote"];
-							 
+							 $tc=$sonuc["tc"];
+							 $UserName=$sonuc["UserName"];
+							 $yourname=$sonuc["yourname"];
+							 $authority=$sonuc["authority"];
 						  echo "<tr>
-						  <td>$ID</td>
-						  <td>$PartyN</td>
-						  <td>$LeaderN</td>
-						  <td>$Vote</td>
-						 
+						  <td>$tc</td>
+						  <td>$UserName</td>
+						  <td>$yourname</td>
+						  <td>$authority</td>
 						  </tr>";
 							}
 					?>
-				
+				 
 			</table>
-			 
+		
 		</div>
-		</div><!-- InstanceEndEditable --></div>
+		
+		<!-- InstanceEndEditable --></div>
 	 
  
 

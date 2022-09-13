@@ -1,25 +1,38 @@
-<?php 
- 
-include("databaseconnect.php");
+ <?php
+$servername = "localhost";
+$database = "dijitalselection";
+$username = "root";
+$password = "12345";
 ob_start();
-if(!isset($_SESSION)) 
-    { 
-	ini_set('session.cookie_samesite', 'None');
-	 
-        session_start(); 
-    } 
+session_start();
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . 
+mysqli_connect_error());
+}
  
+ 
+function VeriGetir()
+{
+	
+	
+}
+function Login()
+{
+
+ /*
 $tc = $_POST['tc'];
 $Kullanici = $_POST['Kullanıcı'];
- 
+ echo($Kullanici);
+ echo($tc);
 $sql_check = mysqli_query($conn,"select * from admin where TC='".$tc."' and UserName='".$Kullanici."'") or die(mysqli_error());
  
 if($sorgu=mysqli_fetch_array($sql_check))  {
     $_SESSION["login"] = "true";
     $_SESSION["tc"] = $sorgu['TC'];
     $_SESSION["name"] = $sorgu['UserName'];
-	
-	 
     header("Location:control.php");
 }
 else {
@@ -32,4 +45,8 @@ else {
 }
  
 ob_end_flush();
+	*/
+	echo "merhaba";
+}
+
 ?>

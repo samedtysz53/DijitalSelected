@@ -16,11 +16,15 @@ $sql_check = mysqli_query($conn,"select * from admin where TC='".$tc."' and User
  
 if($sorgu=mysqli_fetch_array($sql_check))  {
     $_SESSION["login"] = "true";
-    $_SESSION["tc"] = $sorgu['TC'];
-    $_SESSION["name"] = $sorgu['UserName'];
+ 
+    setcookie('tc', $sorgu["tc"], time() + (86400 * 30), "/"); // 86400 = 1 day
+    setcookie('UserName', $sorgu["UserName"], time() + (86400 * 30), "/"); // 86400 = 1 day
+    setcookie('yourname', $sorgu["yourname"], time() + (86400 * 30), "/"); // 86400 = 1 day
+    setcookie('authority', $sorgu["authority"], time() + (86400 * 30), "/"); // 86400 = 1 day
+
 	
 	 
-    header("Location:control.php");
+   header("Location:../control.php");
 }
 else {
     if($tc=="" or $Kullanici=="") {

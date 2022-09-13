@@ -1,4 +1,5 @@
 <!doctype html>
+ 	
 <html>
 <head>
 <meta charset="utf-8">
@@ -24,12 +25,12 @@
 	 
 <div class="mtop form-control">
     
-		<form action="login.php"  method="post">
+		<form action="Control/Login.php"  method="post" name="LData">
         <label for="fname">TC:</label><br>
         <input type="text" pattern="\d{11}" class="form-control" maxlength="11" id="tc" name="tc"><br>
         <label for="lname">Şifre:</label><br>
         <input type="text" class="form-control" id="Kullanıcı" name="Kullanıcı"><br>
-        <button class="btn btn-success">Giriş</button>
+        <button class="btn btn-success" >Giriş</button>
 </form>
 		 
 </div>

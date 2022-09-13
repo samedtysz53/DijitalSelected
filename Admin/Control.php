@@ -1,4 +1,5 @@
 <!doctype html>
+<?php  if (!isset($_SESSION)) { session_start(); }  ?>
 <html><!-- InstanceBegin template="/Templates/Templates.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
@@ -15,7 +16,7 @@
 			
 		}
 		.Top{margin-top: 5%; 
-			height: 500px;
+			height: 500%;
 		  border-radius: 25px;
           border: 2px;
           padding: 20px;
@@ -42,7 +43,10 @@
         <a class="nav-link" href="PartiAdd.php">Parti ekle<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sonuç sayfası</a>
+        <a class="nav-link" href="Sonuclar.php">Sonuç sayfası</a>
+      </li>   
+		<li class="nav-item">
+        <a class="nav-link" href="PersonelAdd.php">Personel ekle</a>
       </li>
 		 
     
@@ -55,13 +59,18 @@
 		
 	
 	<div><!-- InstanceBeginEditable name="EditRegion3" -->
-		<div class="container bg-white rounded-bottom rounded-left rounded-right rounded-top Top">
+		 
+	 
+		 
+	 <div class="container bg-white rounded-bottom rounded-left rounded-right rounded-top Top">
 	    
 		<div class="w-25 m-auto"><img class="img-thumbnail" src="../İmage/profile.png"></div>
 		 
-			 <div class="font-weight-bold"><label>Kullanıcı adı:</label></div>
-			 <div class="font-weight-bold"><label>TC:</label></div>
-			 <div class="font-weight-bold"><label>Yetki düzeyi:</label></div>
+			 <div class="font-weight-bold"><label>Ad:<?php  echo $_COOKIE['UserName'];?></label></div>
+			 <div class="font-weight-bold"><label>Soyad:<?php  echo $_COOKIE['yourname'];?></label></div>
+			 <div class="font-weight-bold"><label>TC:<?php  echo $_COOKIE['tc']; ?></label></div>
+			 <div class="font-weight-bold"><label>Yetki düzeyi:<?php  echo $_COOKIE['authority']; ?></label></div>
+			 
 		</div>
 		<!-- InstanceEndEditable --></div>
 	 
