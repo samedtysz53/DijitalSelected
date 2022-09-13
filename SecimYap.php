@@ -6,7 +6,7 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Kontrol paneli</title>
 <!-- InstanceEndEditable -->
-<link rel="stylesheet" href="Style/bootstrap-4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../Style/bootstrap-4.1.3/css/bootstrap.min.css">
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 	<style>
@@ -27,7 +27,7 @@
  
 <body class="container bg-info">
 	 <div>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light rounded-bottom rounded-left rounded-right rounded-top">
   <a class="navbar-brand" href="#"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -36,14 +36,14 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 	 <li class="nav-item active">
-		<a class="nav-link" href="SecimYap.php">Oy ver</a>
+		<a class="nav-link" href="../../../Index.php">Anasayfa</a>
 		</li>
  
       
       <li class="nav-item">
-        <a class="nav-link" href="Sonuc.php">Sonuç sayfası</a>
+        <a class="nav-link" href="../../../Sonuc.php">Sonuç sayfası</a>
       
-    
+		</li>
     
     </ul>
    

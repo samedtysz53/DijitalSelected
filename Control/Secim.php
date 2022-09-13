@@ -19,6 +19,8 @@ if(mysqli_query($conn,$update))
 $sql="Insert Into peoplecheck(tc) values('".$tc."')";
 if (mysqli_query($conn, $sql))
 {
+    setcookie($tc, "true", time() + (86400 * 30), "/"); // 86
+	echo 
 	 header("Location:../sonuc.php");
 	 
 }

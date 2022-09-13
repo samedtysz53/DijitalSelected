@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="Control.php" server="C:/wamp64/www/ElektronikSecim" local="133074726598373611" remote="133074726590000000" Dst="0" />
-<file name="PartiAdd.php" server="C:/wamp64/www/ElektronikSecim" local="133074179351652509" remote="133074179350000000" Dst="0" />
-<file name="Index.php" server="C:/wamp64/www/ElektronikSecim" local="133074715691137620" remote="133074715690000000" Dst="0" />
-<file name="Index.php" server="C:/wamp64/www" local="133074715691137620" remote="133074715690000000" Dst="0" />
 <file name="Control.php" server="C:/wamp64/www/" local="133074891280000000" remote="133074891280000000" Dst="0" />
+<file name="databaseconnect.php" server="C:/wamp64/www/" local="133074789230000000" remote="133074789230000000" Dst="0" />
 <file name="Index.php" server="C:/wamp64/www/" local="133074865450000000" remote="133074865450000000" Dst="0" />
+<file name="Login.php" server="C:/wamp64/www/" local="133074806980000000" remote="133074806980000000" Dst="0" />
 <file name="PartiAdd.php" server="C:/wamp64/www/" local="133074891310000000" remote="133074891310000000" Dst="0" />
 <file name="PersonelAdd.php" server="C:/wamp64/www/" local="133074891310000000" remote="133074891310000000" Dst="0" />
 <file name="Sonuclar.php" server="C:/wamp64/www/" local="133074908170000000" remote="133074908170000000" Dst="0" />
-<file name="databaseconnect.php" server="C:/wamp64/www/" local="133074789230000000" remote="133074789230000000" Dst="0" />
-<file name="Login.php" server="C:/wamp64/www/" local="133074806980000000" remote="133074806980000000" Dst="0" />
 </dwsync>
